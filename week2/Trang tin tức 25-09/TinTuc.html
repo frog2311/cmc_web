@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIN TỨC</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 2px;
+            background-color:#dcf4dd;
+        }
+        header {
+            background-color: #80c083;
+            color:cornsilk;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            gap: 60px; /* Khoảng cách giữa bài viết và tin tức nổi bật */
+            margin: 50px;
+        }
+        .articles {
+            flex: 1.5;
+            margin-right: 20px;
+        }
+        .articles article {
+            background-color:lightgoldenrodyellow;
+            margin-bottom: 60px;
+            padding: 10px;
+            border: 3px solid #589268;
+            border-radius: 10px;
+        }
+
+        .articles article:hover {
+            transform: scale(1.03); /* Phóng to 5% */
+        }
+        
+
+        aside { /* Tin tức nổi bật */
+            flex: 0.5;
+            padding: 10px;
+            border-left: 2px solid #0b3918; /* Đường phân cách */
+        }
+        h1 {
+            margin: 0;
+            margin-top: 15px;
+        }
+        h2 {
+            color:#0e461e;
+            margin: 0;
+            margin-top: 15px;
+        }
+        h3 {
+            color:rgb(71, 126, 107);
+            margin: 0;
+            margin-top: 15px;
+        }
+        
+        ul {
+            padding-left: 50px;
+        }
+        li {
+            margin-bottom: 30px;
+        }
+        img {
+            max-width: 80%;      /* Giới hạn chiều rộng tối đa của ảnh */
+            height: auto;        /* Đảm bảo tỷ lệ khung hình của ảnh */
+            border-radius: 5px;  /* Bo tròn góc ảnh */
+            display: block;      /* Đặt ảnh là khối để có thể căn giữa */
+            margin: 0 auto;      /* Tự động căn giữa ảnh */
+        }
+
+        figcaption {
+            text-align: center;
+            font-style: italic;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trang tin tức🗞️🗞️🗞️</h1>
+    </header>
+
+    <main>
+        <div class="articles">
+
+            <!-- Bài viết 1 -->
+            <article>
+                <h2>📰Thế giới truyện cổ tích hiện đại trong ‘Cao nguyên trước mùa tuyết’</h2>
+                <h3>Ngày xuất bản: 22/09/2024</h3>
+                <small>Chủ đề: Sách </small>
+                <p>
+                    “Cao nguyên trước mùa tuyết” là tuyển tập 23 truyện ngắn đặc sắc của Ogawa Mimei mang phong cách lãng mạn, đầy chất thơ; xen lẫn những truyện có hơi hướng ngụ ngôn mang tính nhân bản sâu sắc hoặc phê phán hiện thực nhẹ nhàng.
+                </p>
+                <p>
+                    Ogawa Mimei - bậc thầy truyện thiếu nhi Nhật Bản - đã khẳng định: “Mỗi đứa trẻ đều mang trong mình một nhà thơ".
+                </p>
+                <p>
+                    Và quả thật, thế giới truyện cổ tích ông tạo nên trong cuốn sách Cao nguyên trước mùa tuyết (NXB Phụ nữ Việt Nam, Lightbooks phát hành) không chỉ dành riêng cho bạn đọc nhỏ tuổi, mà còn lay động hàng triệu con tim bằng sự kết hợp tinh tế giữa hiện thực và kỳ ảo, giữa chất thơ lãng mạn và những triết lý nhân sinh sâu sắc.
+                </p>
+                <p>
+                    Cao nguyên trước mùa tuyết dẫn dắt độc giả phiêu du qua những vùng đất huyền bí, nơi ranh giới giữa thực và ảo mỏng manh như sương khói, để lại dư âm thật khó quên bởi nỗi buồn man mác chảy tràn trên câu từ:
+                </p>
+                <p>
+                    “Hải cẩu mẹ đang cúi mình trên đỉnh tảng băng trôi, ngơ ngác nhìn xung quanh. Nó là một con hải cẩu có trái tim dịu dàng. Bởi chưa quên đứa con thân yêu đã mất tích vào đầu mùa thu của mình, mỗi ngày, nó đều nhìn quanh như thế.
+                </p>
+                <p>
+                    Không biết đứa nhỏ đi đâu rồi... Hôm nay cũng chẳng thấy đâu’
+                </p>
+                <p>
+                    Hải cẩu nghĩ thế. Gió lạnh vẫn không ngừng thổi. Hải cẩu mẹ mất con, nhìn thứ gì cũng thấy thật đau lòng. Nhìn nước biển khi ấy còn xanh mà nay đã hóa thành sắc bạc, nhìn bông tuyết trắng khẽ rơi lên mình, lòng nó lại tràn ngập nỗi đau…” - (trích Vầng trăng và hải cẩu).
+                </p>
+                <img src ="images/1.jpg">
+                <figcaption style = "text-align: center;">
+                    Ảnh: Linh Đan 
+                </figcaption>
+                <p>
+                    Dòng chảy kỳ ảo trong văn học Nhật Bản tựa như một lạch suối ngầm, lúc ẩn lúc hiện, len lỏi vào từng chi tiết của đời sống. Người cá cô đơn khát khao hạnh phúc nơi trần gian, phản chiếu nỗi niềm sâu thẳm về sự kết nối giữa con người và thiên nhiên. Hình bóng người lữ khách bí ẩn như một ẩn dụ về lòng tốt, đức hy sinh và cả sự hữu hạn của đời người...
+                </p>
+                <p>
+                    Sự hiện diện của yếu tố kỳ ảo không làm lu mờ hiện thực, mà ngược lại càng tô đậm những chi tiết giản dị trong cuộc sống. Ogawa Mimei không sử dụng phép thuật hoa mỹ hay mà tập trung khai thác những bí ẩn chất chứa trong chính nội tâm con người. 
+                </p>
+                <p>
+                    Khép lại trang sách, dư âm của Cao nguyên trước mùa tuyết còn đọng lại mãi trong tâm hồn, vẫy gọi chúng ta trở về với vùng đất tuổi thơ, nơi những câu chuyện thần tiên luôn chứa đựng bao điều kỳ diệu.
+                </p>
+                <p>
+                    “Ong nhỏ đang đậu trên lá đỏ, chợt bay lên, đáp xuống cục than đá đang lại gần. Bởi nó đang nghĩ không biết vật thể màu đen, sáng bóng này là gì.<br>
+
+                    Than mỉm cười, im lặng dõi theo chuyển động của sinh vật nhỏ này. Ong ngửi mùi than và liếm nó bằng cái miệng nhỏ nhắn của mình, cố gắng sử dụng các giác quan nhỏ bé của bản thân để biết nó đến từ đâu. Tuy nhiên, ong vẫn không thể biết được.<br>
+
+                    Đường ray cũng biết rõ chú ong này. Vì sinh vật nhỏ bé, nhanh nhẹn với đôi cánh xinh đẹp này luôn bay từ bông hoa nọ sang bông hoa kia ở khu vực gần đây…” – (trích Cao nguyên trước mùa tuyết)
+                </p>
+                <p>
+                    Ogawa Mimei (1882-1961) là một tiểu thuyết gia người Nhật nổi tiếng thời tiền chiến. Ông thường được ví von là cha đẻ của văn học thiếu nhi hiện đại hay "Andersen của Nhật Bản". Mimei bắt đầu viết tiểu thuyết từ khi còn rất trẻ nhưng đến năm 1926, ông mới chuyển hẳn sang lĩnh vực sáng tác cho trẻ em.<br>
+
+                    Lúc sinh thời, Mimei đã sáng tác hơn 1.200 truyện cổ tích, chứng tỏ bút lực dồi dào và trí tưởng tượng bay bổng. Những sáng tác dành cho độc giả nhí của ông được mô tả là "văn học thiếu nhi không phân biệt" - nghĩa là Ogawa Mimei chưa từng có ý định tách biệt tác phẩm của mình khỏi dòng chảy văn học chung của nhân loại.
+                </p>
+                
+            </article>
+
+            <!-- Bài viết 2 -->
+            <article>
+
+                <h2>📰Xúc động hình ảnh trưng bày 'Thắp ngọn lửa hồng' tại Nhà tù Hoả Lò</h2>
+                <h3>Thứ Ba, 09/07/2024 - 15:39</h3>
+                <small>Chủ đề: Di sản </small>
+                <p><b>
+                    Nhiều hình ảnh, tư liệu về quá trình đấu tranh cách mạng của dân tộc Việt Nam trong trưng bày "Thắp ngọn lửa hồng" tại Nhà tù Hoả Lò khiến người xem xúc động.               
+                </b></p>
+                <p>
+                    Hướng tới kỷ niệm 77 năm Ngày Thương binh - Liệt sĩ (27/7/1947 - 27/7/2024), sáng 9/7, Ban Quản lý di tích Nhà tù Hỏa Lò tổ chức khai mạc trưng bày Thắp ngọn lửa hồng gồm 3 nội dung chính: Tiếng súng mở đầu, Trọn một lời thề và Dấu xưa vang mãi.
+                </p>
+                <img src = "images/2.jpg" >
+                <figcaption style = "text-align: center;">
+                    Những ký ức không bao giờ quên ùa về trong tâm trí của nhiều cựu tù Hỏa Lò có mặt tại trưng bày
+                </figcaption>
+                <p>
+                    Phần Tiếng súng mở đầu trưng bày các tư liệu, hình ảnh về những phong trào cách mạng của Việt Nam như: Xô Viết Nghệ Tĩnh (1930-1931), phong trào đấu tranh đòi tự do dân chủ (1936-1939), Khởi nghĩa Bắc Sơn (9/1940), Khởi nghĩa Nam Kỳ (11/1940), Binh biến Đô Lương (1/1941).<br>
+
+                    Phần Trọn một lời thề giới thiệu thân thế, sự nghiệp của lãnh đạo Đảng và Nhà nước, luôn một lòng vì Tổ quốc. Dù bị tra tấn, đày ải trong lao tù, những người con ưu tú vẫn giữ mãi ngọn lửa nhiệt huyết, tinh thần đấu tranh kiên cường. Ở nơi trường bắn, họ vẫn hiên ngang, bất khuất.
+                </p>
+                <img src ="images/3.jpg">
+                <figcaption style = "text-align: center;">
+                    Trưng bày khiến người xem xúc động
+                </figcaption>
+                <p>
+                    Phần Dấu xưa vang mãi trưng bày hình ảnh các địa danh lịch sử, nơi kẻ địch từng dựng trường bắn và nhà lưu niệm tưởng nhớ những người con ưu tú của Đảng, giờ đã thành “địa chỉ đỏ”, góp phần giáo dục truyền thống cách mạng cho nhiều thế hệ. Nhiệt huyết cách mạng, khí phách hiên ngang của những người chiến sĩ vẫn âm vang qua lời nói, câu thơ và còn nguyên giá trị cho đến ngày nay.
+                </p>
+                <img src = "images/4.jpg">
+                <figcaption style = "text-align: center;">
+                    Hoạt cảnh tái hiện cuộc gặp cuối cùng của gia đình đảng viên xuất sắc Mai Ngọc Thuyết và Nguyễn Văn
+                </figcaption>
+                <p>
+                    Tại trưng bày, du khách được xem hoạt cảnh tái hiện cuộc gặp gỡ cuối cùng trong Nhà tù Hỏa Lò năm 1933 của gia đình đảng viên xuất sắc Mai Ngọc Thuyết và Nguyễn Văn Mẫn. Sau đó, đồng chí Nguyễn Văn Mẫn bị lưu đày đi Nhà tù Côn Đảo và hy sinh năm 1943.<br>
+
+                    Trưng bày diễn ra đến ngày 15/8 tại Di tích lịch sử Nhà tù Hỏa Lò.<br>
+
+                    Ảnh: BTC
+                </p>
+
+            </article>
+
+            <!-- Bài viết 3 -->
+            <article>
+                <h2>📰Rơm và cánh đồng lúa chín vào múa đương đại</h2>
+                <h3>Thứ Sáu, 23/08/2024 - 15:34</h3>
+                <small>Chủ đề: UNESCO</small>
+                <p><b>
+                    Lần đầu tiên, một vở múa đương đại được tổ chức giữa cánh đồng lúa chín ở Hội An (Quảng Nam), khiến du khách trầm trồ đến ngỡ ngàng với cảnh sắc làng quê và cảm nhận đầy đủ hương vị, không khí của mùa gặt.
+                </b></p>
+                <p>
+                    Từ ngày 22 - 25/8, TP Hội An phối hợp cùng Arabesque Vietnam tổ chức vở diễn Rơm trên cánh đồng lúa chín Trái tim lúa Hội An (khối Trường Lệ, phường Cẩm Châu).
+                    <br>
+                    Đây là lần đầu tiên du khách được thưởng thức trình diễn nghệ thuật múa đương đại trên cánh đồng bát ngát, nơi ánh hoàng hôn tắm đẫm phong cảnh trong một sắc vàng ấm áp.
+                    <br>
+                    Vở diễn Rơm tôn vinh vẻ đẹp bình dị, hiền hòa của làng quê Hội An vào mùa gặt hái, thông qua âm nhạc dân gian kết hợp cùng nghệ thuật múa đương đại đẳng cấp quốc tế dưới bàn tay dàn dựng của đạo diễn, giám đốc nghệ thuật Nguyễn Tấn Lộc và giám đốc âm nhạc Đức Trí.
+                    <br>
+                    Với lòng yêu mến Hội An cùng kinh nghiệm biên đạo đẳng cấp quốc tế, biên đạo Nguyễn Tấn Lộc đã mang đến một sản phẩm văn hóa - du lịch đặc trưng cho làng quê Hội An.
+                    <br>
+                    Rơm còn là nỗ lực của UBND TP Hội An nhằm xây dựng và phát triển Hội An theo định hướng thành phố sinh thái - văn hóa - du lịch, theo đó chú trọng việc phát huy và sáng tạo các tiềm năng, lợi thế sẵn có, đặc biệt là trong lĩnh vực văn hóa - nghệ thuật nhằm khẳng định và phát huy danh hiệu Hội An - thành phố sáng tạo của UNESCO.
+                    <br>
+                    Một số hình ảnh về vở diễn “Rơm” trong lễ ra mắt:
+                </p>
+                <img src ="images/5.jpg">
+                <figcaption style ="text-align: center;">
+                    Biểu diễn “Rơm" trên nền phong cảnh là cánh đồng lúa chín vào mùa gặt, Arabesque lần đầu tiên giới thiệu hình thức kết hợp giữa nghệ thuật múa đương đại và thiên nhiên (ambiance dance) đến với Hội An
+                </figcaption>
+                <img src ="images/6.jpg">
+                <figcaption style ="text-align: center;">
+                    Trên nền cảnh cánh đồng lúa bát ngát những ngày tháng tám, vở diễn tôn vinh vẻ đẹp thanh bình, hiền hòa của làng quê mùa gặt
+                </figcaption>
+                <img src ="images/s7.jpg">
+                <figcaption style ="text-align: center;">
+                    Với chất liệu rơm, kết hợp nghệ thuật múa đương đại, trống, nhạc cụ dân tộc, nhạc công biểu diễn trực tiếp cùng diễn viên múa, "Rơm" có thời lượng 60 phút, được tổ chức vào thời điểm lúc mặt trời vừa lặn
+                </figcaption>
+                <img src ="images/8.jpg">
+                <figcaption style ="text-align: center;">
+                    “Rơm” kể về tình cảm bình dị và chân chất của gia đình nông dân Việt Nam
+                </figcaption>
+                <img src ="images/9.jpg">
+                <figcaption style = "text-align: center;">
+                    Ambiance dance vốn là hình thức biểu diễn kết hợp ngôn ngữ múa với không gian ngoài trời, âm thanh, bối cảnh... rất phổ biến trên thế giới, đặc biệt ở các thành phố văn hóa và du lịch
+                </figcaption>
+            </article>
+
+
+        </div>
+        
+        <aside>
+            <h2>Tin tức nổi bật📣</h2>
+            <ul>
+                <li><a href="#">Thế giới truyện cổ tích hiện đại trong ‘Cao nguyên trước mùa tuyết’</a></li>
+                <li><a href="#">Xúc động hình ảnh trưng bày 'Thắp ngọn lửa hồng' tại Nhà tù Hoả Lò</a></li>
+                <li><a href="#">Rơm và cánh đồng lúa chín vào múa đương đại</a></li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>

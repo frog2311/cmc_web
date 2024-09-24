@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog cá nhân</title>
+
+
+    <style>
+        body {
+            overflow-x:hidden; /*ngăn cuộn ngang*/
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0; /*Điều chỉnh khoảng cách bên ngoài phần tử*/
+            padding: 0; /*Điều chỉnh khoảng cách bên trong phần tử*/
+            background-color:rgba(200, 229, 220, 0.89);
+        }
+
+        header{
+            background-color: #579a5a;
+            color:rgb(231, 225, 154);
+            /*Thiết lập khoảng đệm ở trên và dưới của phần tử <header> & khoảng cách bên trái và bên phải*/
+            padding: 10px 0; 
+            text-align: center; /*Canh giữa nội dung nằm trong thẻ <header> theo chiều ngang*/
+        }
+
+        .container {
+            width: 80%; /* Chiều rộng 80% */
+            max-width: 1000px; /* Không vượt quá 800 pixel */
+            background-color: #5fb68d74;
+            padding: 20px;
+            margin: 70px auto; /* Căn giữa với khoảng cách 20px trên và dưới */
+            border-radius: 8px; /* Bo tròn các góc của hộp */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng cho hộp */
+        }
+
+        .container:hover {
+            transform: scale(1.07); /* Phóng to 3% khi rê chuột */
+        }
+        
+        .comments-section h3 { /*tiêu đề bình luận*/
+            margin-bottom: 15px; /* k/c phía dưới tiêu đề bình luận*/ 
+            margin-top: 20px; /* k/c phía trên tiêu đề bình luận*/
+        }
+
+        blockquote { /*ô bình luận*/
+            background-color:rgb(213, 197, 174);
+            padding: 15px;
+            margin: 10px 0 20px 0;
+            font-style: italic; /*Hiển thị nội dung bình luận*/
+            border-left: 5px solid #969595; /*Thêm đường viền bên trái*/
+        }
+        blockquote strong { /*tên người bình luận*/
+            display: block; /*Hiển thị phần nội dung*/
+            margin-bottom: 5px;
+            color:rgb(1, 107, 107);
+        }
+
+        form {
+            margin-top: 20px;
+        }
+        form label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #043421; /*Đặt đường viền xung quanh các trường nhập*/
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #74ae81;
+            color:beige;
+            border: none;
+            cursor: pointer; /*Thay đổi con trỏ chuột*/
+            padding: 10px 20px;
+            font-size: 1em;
+        }
+        input[type="submit"]:hover {
+            background-color: #2a6236;
+        }
+
+        img {
+            width: 100%; /* Đặt chiều rộng của ảnh là 100% */
+            height: auto; /* Chiều cao tự động để giữ tỉ lệ ảnh */
+            border-radius: 5px; /* Bo tròn các góc của ảnh nếu cần */
+        }
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <header>
+        <h1>🪐Blog của Chann✨</h1>
+    </header>
+
+
+    <!-- Bài viết 1 -->
+    <div class="container">
+        <h2 style ="color:#043421">Review Sách "Pháp y Tần Minh"</h2>
+        <small style ="color: rgb(134, 98, 49);">Ngày đăng: 23/09/2024 - Tác giả: Thu🎣</small>
+        <p>Bài viết đánh giá về cuốn sách "Pháp y Tần Minh" – một tác phẩm trinh thám nổi bật với những tình tiết hấp dẫn, pha lẫn sự hồi hộp và kịch tính. Tần Minh, một pháp y tài năng, đã giải mã nhiều vụ án phức tạp thông qua sự am hiểu sâu sắc về cơ thể con người và các hiện tượng sau cái chết. Sách mang đến những góc nhìn chân thực và mới lạ về nghề pháp y, đồng thời thách thức trí thông minh của người đọc qua từng vụ án.</p>
+        <img src ="images/1.jpg">
+
+        <!-- Phần bình luận -->
+        <div class="comments-section">
+            <h3>Bình luận:</h3>
+            
+            <!-- Bình luận 1 -->
+            <blockquote>
+                <strong>Người bình luận A:</strong> Đây là một cuốn sách đầy kịch tính và lôi cuốn. Những phân tích pháp y chi tiết thực sự mở rộng kiến thức của tôi về lĩnh vực này.
+            </blockquote>
+
+            <!-- Bình luận 2 -->
+            <blockquote>
+                <strong>Người bình luận B:</strong> Mình rất thích cách tác giả mô tả từng vụ án. Đọc mà không thể dừng lại, cuốn hút đến từng chi tiết nhỏ.
+            </blockquote>
+
+            <!-- Form nhập bình luận mới -->
+            <form action="#" method="post">
+                <label for="name">Tên của bạn:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="comment">Bình luận của bạn:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+
+                <input type="submit" value="Gửi bình luận">
+            </form>
+        </div>
+    </div>
+
+    <!-- Bài viết 2 -->
+    <div class="container">
+        <h2 style ="color:#043421">Nhóm Nhạc Seventeen</h2>
+        <small style ="color: rgb(134, 98, 49);">Ngày đăng: 24/09/2024 - Tác giả: Carat💎</small>
+        <p>Nhóm nhạc nam nổi tiếng đến từ Hàn Quốc. Thành lập vào năm 2015, Seventeen gây ấn tượng mạnh với tài năng của 13 thành viên, mỗi người đều đóng góp vào việc sản xuất âm nhạc, vũ đạo và các màn trình diễn. Nhóm nhạc này nổi bật với phong cách âm nhạc đa dạng, từ pop đến hip-hop và ballad, cùng với khả năng biểu diễn ấn tượng trên sân khấu.Hiện nay, Seventeen không chỉ thu hút lượng fan lớn ở châu Á mà còn trên toàn thế giới.</p>
+        <img src = "images/17.jpg">
+        <!-- Phần bình luận -->
+        <div class="comments-section">
+            <h3>Bình luận:</h3>
+
+            <!-- Bình luận 1 -->
+            <blockquote>
+                <strong>Người bình luận C:</strong> Mình rất thích Seventeen! Nhóm không chỉ tài năng mà còn rất gần gũi với fan.
+            </blockquote>
+
+            
+
+            <!-- Form nhập bình luận mới -->
+            <form action="#" method="post">
+                <label for="name">Tên của bạn:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="comment">Bình luận của bạn:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+
+                <input type="submit" value="Gửi bình luận">
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>
