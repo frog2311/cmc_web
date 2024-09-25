@@ -1,0 +1,92 @@
+body {
+    overflow-x: hidden; /*ngăn cuộn ngang*/
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0; /*Điều chỉnh khoảng cách bên ngoài phần tử*/
+    padding: 0; /*Điều chỉnh khoảng cách bên trong phần tử*/
+    background-color: rgba(200, 229, 220, 0.89);
+}
+
+header {
+    background-color: #579a5a;
+    color: rgb(231, 225, 154);
+    /*Thiết lập khoảng đệm ở trên và dưới của phần tử <header> & khoảng cách bên trái và bên phải*/
+    padding: 10px 0; 
+    text-align: center; /*Canh giữa nội dung nằm trong thẻ <header> theo chiều ngang*/
+}
+
+.container {
+    width: 80%; /* Chiều rộng 80% */
+    max-width: 1000px; /* Không vượt quá 800 pixel */
+    background-color: #5fb68d74;
+    padding: 20px;
+    margin: 70px auto; /* Căn giữa với khoảng cách 20px trên và dưới */
+    border-radius: 8px; /* Bo tròn các góc của hộp */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng cho hộp */
+}
+
+.container:hover {
+    transform: scale(1.07); /* Phóng to 3% khi rê chuột */
+}
+
+.comments-section h3 { /*tiêu đề bình luận*/
+    margin-bottom: 15px; /* k/c phía dưới tiêu đề bình luận*/ 
+    margin-top: 20px; /* k/c phía trên tiêu đề bình luận*/
+}
+
+blockquote { /*ô bình luận*/
+    background-color: rgb(213, 197, 174);
+    padding: 15px;
+    margin: 10px 0 20px 0;
+    font-style: italic; /*Hiển thị nội dung bình luận*/
+    border-left: 5px solid #969595; /*Thêm đường viền bên trái*/
+}
+
+blockquote strong { /*tên người bình luận*/
+    display: block; /*Hiển thị phần nội dung*/
+    margin-bottom: 5px;
+    color: rgb(1, 107, 107);
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #043421; /*Đặt đường viền xung quanh các trường nhập*/
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #74ae81;
+    color: beige;
+    border: none;
+    cursor: pointer; /*Thay đổi con trỏ chuột*/
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #2a6236;
+}
+
+img {
+    width: 100%; /* Đặt chiều rộng của ảnh là 100% */
+    height: auto; /* Chiều cao tự động để giữ tỉ lệ ảnh */
+    border-radius: 5px; /* Bo tròn các góc của ảnh nếu cần */
+}
+
+h2{
+    color:#043421;
+}
+
+small{
+    color: rgb(134, 98, 49);
+}
