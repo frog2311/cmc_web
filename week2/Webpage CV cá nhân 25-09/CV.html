@@ -8,70 +8,125 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #f4f4f4;
+            display: flex;
+            flex-direction: row;
+            height: 100vh; /* Chiều cao bằng 100% chiều cao khung nhìn */
+            overflow: hidden; /* Xóa cuộn không cần thiết */
         }
-        h1, h2 {
-            color: #333;
+
+        /* Phần bên trái */
+        .left-section {
+            width: 30%;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 40px 20px;
+            text-align: center;
+            box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến kích thước */
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
         }
+
+        .left-section h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        /* Phần bên phải */
+        .right-section {
+            width: 70%;
+            padding: 40px 20px;
+            overflow-y: auto; /* Cho phép cuộn nếu nội dung quá dài */
+            box-sizing: border-box;
+        }
+
+        .right-section h2 {
+            color: #34495e;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .right-section p,
+        .right-section ol {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
         dl dt {
             font-weight: bold;
             margin-top: 10px;
         }
+
         dl dd {
             margin-left: 20px;
             margin-bottom: 10px;
-        }
-        ol {
-            padding-left: 20px;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <!-- Thông tin cá nhân -->
-    <h1>Họ và Tên: Nguyễn Văn A</h1>
-    <p>Email: nguyenvana@gmail.com | Số điện thoại: 0123-456-789</p>
+<!-- Phần bên trái -->
+<div class="left-section">
+    <img src="images/15.jpg" alt="Ảnh cá nhân" class="profile-img">
+    <h1>Nguyễn Thu Trang</h1>
+    <div class="contact-info">
+        <p>Ngày sinh: --/--/----</p>
+        <p>Email: BIT230404@st.cmc-u.edu.vn</p>
+        <p>Số điện thoại: 0123-456-789</p>
+    </div>
+</div>
 
+<!-- Phần bên phải -->
+<div class="right-section">
     <!-- Mục tiêu nghề nghiệp -->
     <h2>Mục tiêu nghề nghiệp</h2>
-    <p>Tôi mong muốn phát triển kỹ năng và kinh nghiệm trong lĩnh vực phát triển phần mềm, đồng thời đóng góp vào sự thành công của công ty thông qua các dự án chất lượng cao.</p>
-
-    <!-- Kinh nghiệm làm việc -->
-    <h2>Kinh nghiệm làm việc</h2>
-    <dl>
-        <dt>Chuyên viên phát triển phần mềm - Công ty ABC</dt>
-        <dd>Thời gian: 01/2020 - 09/2023</dd>
-        <dd>Mô tả: Phát triển các ứng dụng web, xây dựng và bảo trì hệ thống phần mềm nội bộ.</dd>
-        
-        <dt>Thực tập sinh phát triển web - Công ty XYZ</dt>
-        <dd>Thời gian: 06/2019 - 12/2019</dd>
-        <dd>Mô tả: Hỗ trợ phát triển các tính năng mới cho website công ty, tối ưu hóa hiệu suất trang web.</dd>
-    </dl>
-
-    <!-- Kỹ năng -->
-    <h2>Kỹ năng</h2>
-    <ol>
-        <li>Phát triển web với HTML, CSS, JavaScript</li>
-        <li>Quản lý cơ sở dữ liệu SQL</li>
-        <li>Sử dụng các framework: React, Angular</li>
-        <li>Git và quản lý mã nguồn</li>
-    </ol>
+    <p> </p>
+    <p> </p>
 
     <!-- Học vấn -->
     <h2>Học vấn</h2>
     <ol>
-        <li>Cử nhân Công nghệ Thông tin - Đại học Công nghệ, 2016 - 2020</li>
-        <li>Chứng chỉ Lập trình viên Web Full-stack, 2021</li>
+        <li></li>
+        <li></li>
     </ol>
+
+    <!-- Kỹ năng -->
+    <h2>Kỹ năng</h2>
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <!-- Kinh nghiệm làm việc -->
+    <h2>Kinh nghiệm làm việc</h2>
+    <dl>
+        <dt></dt>
+        <dd></dd>
+        <dd></dd>
+
+        <dt></dt>
+        <dd></dd>
+        <dd></dd>
+    </dl>
 </div>
 
 </body>
