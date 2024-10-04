@@ -4,88 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIN TỨC</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 20px;
-            margin: 0;
-            padding: 2px;
-            background-color:#dcf4dd;
-        }
-        header {
-            background-color: #80c083;
-            color:cornsilk;
-            padding: 10px 0;
-            text-align: center;
-        }
-        main {
-            display: flex;
-            gap: 60px; /* Khoảng cách giữa bài viết và tin tức nổi bật */
-            margin: 50px;
-        }
-        .articles {
-            flex: 1.5;
-            margin-right: 20px;
-        }
-        .articles article {
-            background-color:lightgoldenrodyellow;
-            margin-bottom: 60px;
-            padding: 10px;
-            border: 3px solid #589268;
-            border-radius: 10px;
-        }
-
-        .articles article:hover {
-            transform: scale(1.03); /* Phóng to 5% */
-        }
-        
-
-        aside { /* Tin tức nổi bật */
-            flex: 0.5;
-            padding: 10px;
-            border-left: 2px solid #0b3918; /* Đường phân cách */
-        }
-        h1 {
-            margin: 0;
-            margin-top: 15px;
-        }
-        h2 {
-            color:#0e461e;
-            margin: 0;
-            margin-top: 15px;
-        }
-        h3 {
-            color:rgb(71, 126, 107);
-            margin: 0;
-            margin-top: 15px;
-        }
-        
-        ul {
-            padding-left: 50px;
-        }
-        li {
-            margin-bottom: 30px;
-        }
-        img {
-            max-width: 80%;      /* Giới hạn chiều rộng tối đa của ảnh */
-            height: auto;        /* Đảm bảo tỷ lệ khung hình của ảnh */
-            border-radius: 5px;  /* Bo tròn góc ảnh */
-            display: block;      /* Đặt ảnh là khối để có thể căn giữa */
-            margin: 0 auto;      /* Tự động căn giữa ảnh */
-        }
-
-        figcaption {
-            text-align: center;
-            font-style: italic;
-            margin-top: 5px;
-            margin-bottom: 15px;
-        }
-
-        
-
-    </style>
+    <link rel = "stylesheet" href ="./TinTuc.css">
 </head>
 <body>
+
+
     <header>
         <h1>Trang tin tức🗞️🗞️🗞️</h1>
     </header>
@@ -120,7 +43,7 @@
                     Hải cẩu nghĩ thế. Gió lạnh vẫn không ngừng thổi. Hải cẩu mẹ mất con, nhìn thứ gì cũng thấy thật đau lòng. Nhìn nước biển khi ấy còn xanh mà nay đã hóa thành sắc bạc, nhìn bông tuyết trắng khẽ rơi lên mình, lòng nó lại tràn ngập nỗi đau…” - (trích Vầng trăng và hải cẩu).
                 </p>
                 <img src ="images/1.jpg">
-                <figcaption style = "text-align: center;">
+                <figcaption>
                     Ảnh: Linh Đan 
                 </figcaption>
                 <p>
@@ -169,14 +92,14 @@
                     Phần Trọn một lời thề giới thiệu thân thế, sự nghiệp của lãnh đạo Đảng và Nhà nước, luôn một lòng vì Tổ quốc. Dù bị tra tấn, đày ải trong lao tù, những người con ưu tú vẫn giữ mãi ngọn lửa nhiệt huyết, tinh thần đấu tranh kiên cường. Ở nơi trường bắn, họ vẫn hiên ngang, bất khuất.
                 </p>
                 <img src ="images/3.jpg">
-                <figcaption style = "text-align: center;">
+                <figcaption>
                     Trưng bày khiến người xem xúc động
                 </figcaption>
                 <p>
                     Phần Dấu xưa vang mãi trưng bày hình ảnh các địa danh lịch sử, nơi kẻ địch từng dựng trường bắn và nhà lưu niệm tưởng nhớ những người con ưu tú của Đảng, giờ đã thành “địa chỉ đỏ”, góp phần giáo dục truyền thống cách mạng cho nhiều thế hệ. Nhiệt huyết cách mạng, khí phách hiên ngang của những người chiến sĩ vẫn âm vang qua lời nói, câu thơ và còn nguyên giá trị cho đến ngày nay.
                 </p>
                 <img src = "images/4.jpg">
-                <figcaption style = "text-align: center;">
+                <figcaption>
                     Hoạt cảnh tái hiện cuộc gặp cuối cùng của gia đình đảng viên xuất sắc Mai Ngọc Thuyết và Nguyễn Văn
                 </figcaption>
                 <p>
@@ -211,23 +134,23 @@
                     Một số hình ảnh về vở diễn “Rơm” trong lễ ra mắt:
                 </p>
                 <img src ="images/5.jpg">
-                <figcaption style ="text-align: center;">
+                <figcaption>
                     Biểu diễn “Rơm" trên nền phong cảnh là cánh đồng lúa chín vào mùa gặt, Arabesque lần đầu tiên giới thiệu hình thức kết hợp giữa nghệ thuật múa đương đại và thiên nhiên (ambiance dance) đến với Hội An
                 </figcaption>
                 <img src ="images/6.jpg">
-                <figcaption style ="text-align: center;">
+                <figcaption style>
                     Trên nền cảnh cánh đồng lúa bát ngát những ngày tháng tám, vở diễn tôn vinh vẻ đẹp thanh bình, hiền hòa của làng quê mùa gặt
                 </figcaption>
-                <img src ="images/s7.jpg">
+                <img src>
                 <figcaption style ="text-align: center;">
                     Với chất liệu rơm, kết hợp nghệ thuật múa đương đại, trống, nhạc cụ dân tộc, nhạc công biểu diễn trực tiếp cùng diễn viên múa, "Rơm" có thời lượng 60 phút, được tổ chức vào thời điểm lúc mặt trời vừa lặn
                 </figcaption>
                 <img src ="images/8.jpg">
-                <figcaption style ="text-align: center;">
+                <figcaption>
                     “Rơm” kể về tình cảm bình dị và chân chất của gia đình nông dân Việt Nam
                 </figcaption>
                 <img src ="images/9.jpg">
-                <figcaption style = "text-align: center;">
+                <figcaption>
                     Ambiance dance vốn là hình thức biểu diễn kết hợp ngôn ngữ múa với không gian ngoài trời, âm thanh, bối cảnh... rất phổ biến trên thế giới, đặc biệt ở các thành phố văn hóa và du lịch
                 </figcaption>
             </article>

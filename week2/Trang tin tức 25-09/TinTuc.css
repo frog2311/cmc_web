@@ -1,0 +1,76 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 2px;
+    background-color:#dcf4dd;
+}
+header {
+    background-color: #80c083;
+    color:cornsilk;
+    padding: 10px 0;
+    text-align: center;
+}
+main {
+    display: flex;
+    gap: 60px; /* Khoảng cách giữa bài viết và tin tức nổi bật */
+    margin: 50px;
+}
+.articles {
+    flex: 1.5;
+    margin-right: 20px;
+}
+.articles article {
+    background-color:lightgoldenrodyellow;
+    margin-bottom: 60px;
+    padding: 10px;
+    border: 3px solid #589268;
+    border-radius: 10px;
+}
+
+.articles article:hover {
+    transform: scale(1.03); /* Phóng to 5% */
+}
+
+
+aside { /* Tin tức nổi bật */
+    flex: 0.5;
+    padding: 10px;
+    border-left: 2px solid #0b3918; /* Đường phân cách */
+}
+h1 {
+    margin: 0;
+    margin-top: 15px;
+}
+h2 {
+    color:#0e461e;
+    margin: 0;
+    margin-top: 15px;
+}
+h3 {
+    color:rgb(71, 126, 107);
+    margin: 0;
+    margin-top: 15px;
+}
+
+ul {
+    padding-left: 50px;
+}
+li {
+    margin-bottom: 30px;
+}
+img {
+    max-width: 80%;      /* Giới hạn chiều rộng tối đa của ảnh */
+    height: auto;        /* Đảm bảo tỷ lệ khung hình của ảnh */
+    border-radius: 5px;  /* Bo tròn góc ảnh */
+    display: block;      /* Đặt ảnh là khối để có thể căn giữa */
+    margin: 0 auto;      /* Tự động căn giữa ảnh */
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
